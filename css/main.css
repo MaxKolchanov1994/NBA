@@ -1,22 +1,29 @@
 * {
     box-sizing: border-box;
-    font-family: 'Gotham Condensed', sans-serif;
+    font-family: 'Umberland Slab', sans-serif;
     text-decoration: none;
+}
+body {
+    background-color: rgb(243, 240, 236);
 }
 .conteiner {
     background-color: rgb(243, 240, 236);
     margin: 0 auto;
 }
-@media (max-width: 800px){
+
+@media (max-width: 700px) {
     .conteiner {
-        text-align: center;
-        display: block;
-    }
-    .conteinerBox {
-        text-align: center;
-        display: block;
+        display:block;
     }
 }
+
+
+@media (max-width: 700px) {
+    .cb {
+        display:block;
+    }
+}
+
 
 
 .text {
@@ -40,10 +47,17 @@
     max-width: 800px;
     margin: 0 auto;
 }
-.conteinerBox {
-    display: flex;
+.cb {
+    display:flex;
 }
-.box1 {
+
+@media (max-width: 700px) {
+    .cb {
+        display:inline-block;
+    }
+}
+
+.box {
     text-align:center ;
     width: 250px;
     height: 300px;;
@@ -54,43 +68,8 @@
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
-.box2 {
-    text-align: center;
-    width: 250px;
-    height: 300px;
-    background: #e4dede;
-    margin: 0px 10px ;
-    box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
 
 
-}
-.box3 {
-    text-align: center;
-    width: 250px;
-    height: 300px;
-    background: #e4dede;
-    margin: 0px 10px ;
-    box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-
-}
-.box4 {
-    text-align: center;
-    width: 250px;
-    height: 300px;
-    background: #e4dede;
-    margin: 0px 10px ;
-    box-shadow:
-       inset 0 -3em 3em rgba(0,0,0,0.1),
-             0 0  0 2px rgb(255,255,255),
-             0.3em 0.3em 1em rgba(0,0,0,0.3);
-
-}
 .box5 {
     text-align: center;
     width: 250px;
@@ -114,21 +93,17 @@
     
 }
 .boxi11 {
-    padding: 5px;
+    padding: 0px;
 }
 .boxi12 {
     padding: 1px;
+    font-size: 10px;
 }
 .name {
     font-size: 30px;
 }
-.name1 {
-    font-size: 25px;
-}
-.pozi1 {
-    font-size: 23px;
-    padding-bottom: 15px;
-}
+
+
 .pozi {
     font-size: 20px;
 }
@@ -153,8 +128,13 @@ justify-content: center;
     
 }
 .company {
-    font-weight: bolder;
+    font-size: 30px;
+
 }
 .pages {
     color: #1f1d1d;
+}
+
+.pages :active :hover {
+    color:dimgrey;
 }
